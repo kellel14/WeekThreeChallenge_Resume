@@ -20,7 +20,7 @@ public class Resume {
 
     }
 
-    public Contact getCOntact(int ith){
+    public Contact getContact(int ith){
         Contact theContact = this.myContact.get(ith);
         return theContact;
     }
@@ -50,74 +50,41 @@ public class Resume {
     public int getWorkHist_id(){
         return myWorkHistory.size();
     }
-    public ProficiencyRating getSkills(int ith){
-        ProficiencyRating theSkill = this.mySkills.get(ith);
-        return theSkill;
+//    public ProficiencyRating getSkills(int ith){
+//        ProficiencyRating theSkill = this.mySkills.get(ith);
+//        return theSkill;
+//    }
+//
+//    public void addSkill(ProficiencyRating skills){
+//        mySkills.add(skills);
+//    }
+//
+//    public int getSkill_id(){
+//        return mySkills.size();
+//    }
+
+
+    public static ArrayList<Education> getMyEducation() {
+        return myEducation;
     }
 
-    public void addSkill(ProficiencyRating skills){
-        mySkills.add(skills);
+    public static void setMyEducation(ArrayList<Education> myEducation) {
+        Resume.myEducation = myEducation;
     }
 
-    public int getSkill_id(){
-        return mySkills.size();
+    public static ArrayList<WorkHistory> getMyWorkHistory() {
+        return myWorkHistory;
     }
 
+    public static void setMyWorkHistory(ArrayList<WorkHistory> myWorkHistory) {
+        Resume.myWorkHistory = myWorkHistory;
+    }
 
+    public static ArrayList<ProficiencyRating> getMySkills() {
+        return mySkills;
+    }
 
-
-
-
-//    public Name getNames(int ith) {
-//        Name theName = this.myName.get(ith);
-//        return theName;
-//    }
-//
-//    public static ArrayList<Name> getMyName() {
-//        return myName;
-//    }
-//
-//    public static void setMyName(ArrayList<Name> myName) {
-//        Resume.myName = myName;
-//    }
-//
-//    public static ArrayList<Email> getMyEmail() {
-//        return myEmail;
-//    }
-//
-//    public static void setMyEmail(ArrayList<Email> myEmail) {
-//        Resume.myEmail = myEmail;
-//    }
-//
-//    public static ArrayList<PhoneNumber> getMyNumber() {
-//        return myNumber;
-//    }
-//
-//    public static void setMyNumber(ArrayList<PhoneNumber> myNumber) {
-//        Resume.myNumber = myNumber;
-//    }
-//
-//    public static ArrayList<Education> getMyEducation() {
-//        return myEducation;
-//    }
-//
-//    public static void setMyEducation(ArrayList<Education> myEducation) {
-//        Resume.myEducation = myEducation;
-//    }
-//
-//    public static ArrayList<WorkHistory> getMyWorkHistory() {
-//        return myWorkHistory;
-//    }
-//
-//    public static void setMyWorkHistory(ArrayList<WorkHistory> myWorkHistory) {
-//        Resume.myWorkHistory = myWorkHistory;
-//    }
-//
-//    public static ArrayList<ProficiencyRating> getMySkills() {
-//        return mySkills;
-//    }
-//
-//    public static void setMySkills(ArrayList<ProficiencyRating> mySkills) {
-//        Resume.mySkills = mySkills;
-//    }
+    public static void setMySkills(ArrayList<ProficiencyRating> mySkills) {
+        Resume.mySkills = mySkills;
+    }
 }

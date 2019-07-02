@@ -49,4 +49,8 @@ public class Education {
     public void setYear(int year) {
         this.year = year;
     }
+    public String DisplayTextEdu(){
+        return getDegree() + " in " + getMajor() + "," + "\n" +
+                getSchool() + ", " + getYear() + ".";
+    }
 }

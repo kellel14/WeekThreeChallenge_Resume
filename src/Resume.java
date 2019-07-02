@@ -1,9 +1,8 @@
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Resume {
-    private static ArrayList<Name> myName;
-    private static ArrayList<Email> myEmail;
-    private static ArrayList<PhoneNumber> myNumber;
+    private static ArrayList<Contact>myContact;
     private static ArrayList<Education> myEducation;
     private static ArrayList<WorkHistory> myWorkHistory;
     private static ArrayList<ProficiencyRating> mySkills;
@@ -14,52 +13,16 @@ public class Resume {
 
 
     public Resume() {
-        myName = new ArrayList<Name>();
-        myEmail = new ArrayList<Email>();
-        myNumber = new ArrayList<PhoneNumber>();
+        myContact = new ArrayList<Contact>();
         myEducation = new ArrayList<Education>();
         myWorkHistory = new ArrayList<WorkHistory>();
         mySkills = new ArrayList<ProficiencyRating>();
 
     }
 
-    public Name getNames(int ith){
-        Name theName = this.myName.get(ith);
-        return theName;
-    }
-
-    public void addName(Name names){
-        myName.add(names);
-    }
-
-    public int getName_id(){
-        return myName.size();
-    }
-
-    public Email getEmail(int ith){
-        Email theEmail = this.myEmail.get(ith);
-        return theEmail;
-    }
-
-    public void addEmail (Email emails){
-        myEmail.add(emails);
-    }
-
-    public int getEmail_id(){
-        return myEmail.size();
-    }
-
-    public PhoneNumber getNumber(int ith){
-        PhoneNumber theNumber = this.myNumber.get(ith);
-        return theNumber;
-    }
-
-    public void addNumber(PhoneNumber numbers){
-        myNumber.add(numbers);
-    }
-
-    public int getNumber(){
-        return myNumber.size();
+    public Contact getCOntact(int ith){
+        Contact theContact = this.myContact.get(ith);
+        return theContact;
     }
 
     public Education getEducation(int ith){

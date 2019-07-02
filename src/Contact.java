@@ -24,7 +24,7 @@ public class Contact {
     }
 
     public void setName(String name) {
-        Name = user.nextLine();
+       this.Name = name;
     }
 
     public String getEmail() {
@@ -32,7 +32,7 @@ public class Contact {
     }
 
     public void setEmail(String email) {
-        Email = user.nextLine();
+        this.Email = email;
     }
 
     public long getPhoneNumber() {
@@ -42,4 +42,9 @@ public class Contact {
     public void setPhoneNumber(long phoneNumber) {
         this.phoneNumber = user.nextLong();
     }
+
+    public String DisplayTextContact() {
+        return Name + "\t\t" + Email + "\t\t" + phoneNumber;
+    }
 }
+
